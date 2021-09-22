@@ -56,22 +56,21 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Grounded.cs" />
+    <Compile Include="Assets\Scripts\Player\Grounded.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemyhit.cs" />
-    <Compile Include="Assets\Scripts\Resetlevel.cs" />
     <Compile Include="Assets\Scripts\Enemies\Triggerzone.cs" />
-    <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\Player\Movement.cs" />
     <Compile Include="Assets\Scripts\Inventory\Playerinventory.cs" />
+    <Compile Include="Assets\Scripts\Scene\Keypickup.cs" />
     <Compile Include="Assets\Scripts\Platformmovement.cs" />
-    <Compile Include="Assets\Scripts\Playerhealth.cs" />
-    <Compile Include="Assets\Scripts\Loadscene.cs" />
+    <Compile Include="Assets\Scripts\Player\Playerhealth.cs" />
+    <Compile Include="Assets\Scripts\Scene\Loadscene.cs" />
     <Compile Include="Assets\Scripts\Inventory\Pickup.cs" />
-    <Compile Include="Assets\Scripts\Levelcontrol.cs" />
+    <Compile Include="Assets\Scripts\Scene\Levelcontrol.cs" />
     <Compile Include="Assets\Scripts\Abilites\Abilitesscript.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\Scripts\Abilites\Green.cs" />
     <Compile Include="Assets\Scripts\Enemies\PatrolAttack.cs" />
-    <Compile Include="Assets\Scripts\Keypickup.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
