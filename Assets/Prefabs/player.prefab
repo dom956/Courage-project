@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 1295516246}
   - component: {fileID: 1295516250}
   - component: {fileID: 3098235411458243204}
-  - component: {fileID: 688140983}
+  - component: {fileID: 2314831510469053007}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -145,7 +145,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -9095717837082945937, guid: 34587324d412940a79d530020c957dc0,
     type: 3}
   m_Color: {r: 0, g: 0.9155476, b: 1, a: 1}
@@ -219,7 +219,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
---- !u!114 &688140983
+--- !u!114 &2314831510469053007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,7 +228,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4982882873667100580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b6fc0a85d1be50429773d0d7868f2ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 50a8c5579b5c592448a52afaf56ce887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 11400000, guid: bdc8c4fce4954c148ace849ccd0dacd9, type: 2}
+  isFull: 000000
+  slots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

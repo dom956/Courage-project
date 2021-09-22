@@ -11,7 +11,7 @@ public class Pickup : MonoBehaviour
 
     private void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Playerinventory>();
+        inventory = FindObjectOfType<Playerinventory>();
     }
 
 
@@ -19,14 +19,15 @@ public class Pickup : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            for(int i = 0; i < inventory.slots.Length; i++)
+            for (int i = 0; i < inventory.slots.Length; i++)
             {
-                if(inventory.isFull[i] == false)
+                if (inventory.isFull[i] == false)
                 {
                     inventory.isFull[i] = true;
-                    Instantiate(itemButton, inventory.slots[i].transform, false);
+                    GameObject newItem = Instantiate(itemButton, Vector3.zero, Quaternion.identity);
+                    newItem.transform.SetParent(inventory.slots[i].transform, false);
                     Destroy(gameObject);
                     break;
                 }
