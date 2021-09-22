@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   updatedHealth: 0
   maxHealth: 0
-  pointIncrease: 0
+  pointIncrease: 1
 --- !u!114 &1064766014
 MonoBehaviour:
   m_ObjectHideFlags: 0

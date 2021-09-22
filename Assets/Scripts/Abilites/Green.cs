@@ -8,7 +8,7 @@ public class Green : MonoBehaviour
     public float updatedHealth;
     public float maxHealth;
     public float pointIncrease = 1f;
-    Image  healthmeter;
+    public Image healthmeter;
 
 
 
@@ -19,21 +19,20 @@ public class Green : MonoBehaviour
 
         updatedHealth = 10;
         maxHealth = 10;
-        healthmeter.GetComponent<Image>();
-        
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         updatedHealth += pointIncrease * Time.deltaTime;
-        if(updatedHealth > maxHealth)
+        if (updatedHealth > maxHealth)
         {
             updatedHealth = 10;
         }
-        if(updatedHealth < 0)
+        if (updatedHealth < 0)
         {
             updatedHealth = 0;
         }
@@ -44,5 +43,5 @@ public class Green : MonoBehaviour
 
 
     }
-    
+
 }
