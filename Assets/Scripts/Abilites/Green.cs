@@ -8,7 +8,6 @@ public class Green : MonoBehaviour
     public float updatedHealth;
     public float maxHealth;
     public float pointIncrease = 1f;
-    public Image healthmeter;
 
 
 
@@ -16,7 +15,6 @@ public class Green : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         updatedHealth = 10;
         maxHealth = 10;
 

@@ -11,13 +11,13 @@ public class Playerhealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        healthmeter = GetComponent<Image> ();
+        healthmeter = GetComponent<Image>();
         health = maxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
-        healthmeter.fillAmount = health / maxHealth;
+        healthmeter.fillAmount = FindObjectOfType<Green>()?.updatedHealth / maxHealth ?? health / maxHealth;
     }
 }
