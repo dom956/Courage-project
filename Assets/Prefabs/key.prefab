@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4124263651932842734}
   - component: {fileID: 1678698425332163471}
   - component: {fileID: -5730917717883945992}
+  - component: {fileID: 1674555767}
   m_Layer: 0
   m_Name: key
   m_TagString: Keys
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!58 &-5730917717883945992
 CircleCollider2D:
@@ -94,9 +95,22 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.005454195, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.5054542
+--- !u!114 &1674555767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2333799392584024646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78fa027f10c9124984567b2ec694f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}

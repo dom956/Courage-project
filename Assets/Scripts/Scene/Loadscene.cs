@@ -6,17 +6,6 @@ using UnityEngine.SceneManagement;
 public class Loadscene : MonoBehaviour
 {
 
-    void Start()
-    {
-        print("Scene loaded");
-
-
-
-
-
-    }
-
-
 
     public void ResetScene()
     {
