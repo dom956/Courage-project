@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class Green : MonoBehaviour
 {
     public float updatedHealth;
     public float maxHealth;
     public float pointIncrease = 1f;
+    
+    
 
 
 
@@ -17,6 +19,9 @@ public class Green : MonoBehaviour
     {
         updatedHealth = 10;
         maxHealth = 10;
+        
+
+        
 
 
     }
@@ -28,16 +33,16 @@ public class Green : MonoBehaviour
         updatedHealth += pointIncrease * Time.deltaTime;
         if (updatedHealth > maxHealth)
         {
-            updatedHealth = 10;
+            pointIncrease += 1;
+            updatedHealth = maxHealth;
+            
         }
         if (updatedHealth < 0)
         {
             updatedHealth = 0;
         }
 
-        Playerhealth.health += pointIncrease;
-        Playerhealth.health = updatedHealth;
-
+       
 
 
     }

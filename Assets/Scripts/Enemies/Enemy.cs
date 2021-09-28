@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         float distToPlayer = Vector2.Distance(transform.position, Player.position);
         if(distToPlayer < Range)
@@ -47,7 +47,7 @@ public class Enemy : MonoBehaviour
 
         void StopChasingPlayer()
         {
-            rb2d.velocity = new Vector2(0, 0);
+            GetComponent<Patrol>();
         }
 
         

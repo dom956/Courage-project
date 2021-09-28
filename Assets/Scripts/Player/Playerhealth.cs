@@ -6,8 +6,11 @@ using UnityEngine.UI;
 public class Playerhealth : MonoBehaviour
 {
     Image healthmeter;
-    float maxHealth = 10f;
+    int maxHealth = 10;
     public static float health;
+    
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +22,10 @@ public class Playerhealth : MonoBehaviour
     void Update()
     {
         healthmeter.fillAmount = FindObjectOfType<Green>()?.updatedHealth / maxHealth ?? health / maxHealth;
+        
     }
+
+  
+    
+
 }

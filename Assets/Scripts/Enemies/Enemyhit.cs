@@ -9,6 +9,7 @@ public class Enemyhit : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         Playerhealth.health -= 1f;
+        
     }
 
 
