@@ -919,6 +919,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7827618839151592379}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1631911577 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 948856314, guid: a15cb361d515d28469b7428df164dc1d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5484162567128681628}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1690043468 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1617459369084743784, guid: 6b8db95337742c546bc56c6d6d3a51dc,
@@ -1110,7 +1122,6 @@ GameObject:
   - component: {fileID: 1916960667}
   - component: {fileID: 1916960666}
   - component: {fileID: 1916960665}
-  - component: {fileID: 1916960669}
   m_Layer: 5
   m_Name: Inventory Canvas
   m_TagString: Untagged
@@ -1201,23 +1212,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1916960669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916960664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50a8c5579b5c592448a52afaf56ce887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFull: 
-  slots:
-  - {fileID: 1496655119}
-  - {fileID: 110110602}
-  - {fileID: 222046931}
 --- !u!850595691 &1918985838
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1366,6 +1360,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2314831510469053007, guid: 21858dbece70abb45b5de894db8b1c9c,
         type: 3}
+      propertyPath: healthmeter
+      value: 
+      objectReference: {fileID: 1631911577}
+    - target: {fileID: 2314831510469053007, guid: 21858dbece70abb45b5de894db8b1c9c,
+        type: 3}
       propertyPath: slots.Array.data[0]
       value: 
       objectReference: {fileID: 1496655119}
@@ -1439,7 +1438,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 21858dbece70abb45b5de894db8b1c9c, type: 3}
 --- !u!1001 &3640547814388080445
 PrefabInstance:
@@ -1778,7 +1778,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 948856313, guid: a15cb361d515d28469b7428df164dc1d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a15cb361d515d28469b7428df164dc1d, type: 3}
 --- !u!1001 &7827618839151592379
 PrefabInstance:
