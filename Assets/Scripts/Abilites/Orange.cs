@@ -6,14 +6,14 @@ public class Orange : MonoBehaviour
 {
 
     public bool isGrounded = false;
-    Movement playerscript;
-    public GameObject pl;
+    
+    
   
     
 
     void Start()
     {
-        playerscript = pl.GetComponent<Movement>();
+        
     }
 
     void Update()

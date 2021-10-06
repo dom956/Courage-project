@@ -57,17 +57,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\Grounded.cs" />
+    <Compile Include="Assets\Scripts\Scene\Onstaytrigger.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemyhit.cs" />
+    <Compile Include="Assets\Scripts\Scene\Buttonpress.cs" />
     <Compile Include="Assets\FindMissingScripts.cs" />
     <Compile Include="Assets\Scripts\Player\Movement.cs" />
     <Compile Include="Assets\Scripts\Inventory\Playerinventory.cs" />
     <Compile Include="Assets\Scripts\Abilites\Orange.cs" />
     <Compile Include="Assets\Scripts\Scene\Keypickup.cs" />
+    <Compile Include="Assets\Link.cs" />
     <Compile Include="Assets\Scripts\Platformmovement.cs" />
     <Compile Include="Assets\Scripts\Player\Playerhealth.cs" />
     <Compile Include="Assets\Scripts\Scene\Loadscene.cs" />
     <Compile Include="Assets\Scripts\Inventory\Pickup.cs" />
     <Compile Include="Assets\Scripts\Scene\Levelcontrol.cs" />
+    <Compile Include="Assets\Scripts\Scene\Mainmenu.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\Scripts\Abilites\Green.cs" />
     <Compile Include="Assets\Scripts\Enemies\Patrol.cs" />
