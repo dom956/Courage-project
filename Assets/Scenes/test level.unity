@@ -266,27 +266,6 @@ Transform:
   m_Father: {fileID: 2092624491}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &202091045 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1521085554873418435, guid: 0b55e8caea1787345bf16aec5a71c69f,
-    type: 3}
-  m_PrefabInstance: {fileID: 3640547814388080445}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &202091050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 202091045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd2f8af90eb2f704bbaecb2888fac50d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 688140977}
-  Range: 5
-  moveSpeed: 2
 --- !u!1 &222046931
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,6 +452,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1064766014, guid: d17d023cb2017854f9e0016da63e8961, type: 3}
       propertyPath: item
+      value: 
+      objectReference: {fileID: 4793944076845455528, guid: cb274666afc88c94db9e9d9b5f1a6521,
+        type: 3}
+    - target: {fileID: 1064766014, guid: d17d023cb2017854f9e0016da63e8961, type: 3}
+      propertyPath: image
       value: 
       objectReference: {fileID: 4793944076845455528, guid: cb274666afc88c94db9e9d9b5f1a6521,
         type: 3}
@@ -944,6 +928,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1552425491}
     m_Modifications:
+    - target: {fileID: 1184215016, guid: f1a64c0812e1b8c40a37ff6343c0b4ea, type: 3}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 8481253661881327008, guid: e936045af59860c48ab8d019cf765c31,
+        type: 3}
     - target: {fileID: 252080251393438990, guid: f1a64c0812e1b8c40a37ff6343c0b4ea,
         type: 3}
       propertyPath: m_Name
@@ -1391,7 +1380,7 @@ PrefabInstance:
     - target: {fileID: 8256717107154893997, guid: 21858dbece70abb45b5de894db8b1c9c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.4
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 8256717107154893997, guid: 21858dbece70abb45b5de894db8b1c9c,
         type: 3}
@@ -1452,37 +1441,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 688140977}
-    - target: {fileID: 838722293, guid: 0b55e8caea1787345bf16aec5a71c69f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 838722293, guid: 0b55e8caea1787345bf16aec5a71c69f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996571329, guid: 0b55e8caea1787345bf16aec5a71c69f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.95
-      objectReference: {fileID: 0}
+    - target: {fileID: 202091050, guid: 0b55e8caea1787345bf16aec5a71c69f, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 688140977}
     - target: {fileID: 1013903688985085199, guid: 0b55e8caea1787345bf16aec5a71c69f,
         type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013903688985085199, guid: 0b55e8caea1787345bf16aec5a71c69f,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013903688985085199, guid: 0b55e8caea1787345bf16aec5a71c69f,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013903688985085199, guid: 0b55e8caea1787345bf16aec5a71c69f,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.7094694
       objectReference: {fileID: 0}
     - target: {fileID: 1013903688985085199, guid: 0b55e8caea1787345bf16aec5a71c69f,
         type: 3}
@@ -1860,6 +1826,12 @@ PrefabInstance:
     - target: {fileID: 8338175672335990560, guid: 0cf2e065dca289b49b9c490aae543d5f,
         type: 3}
       propertyPath: item
+      value: 
+      objectReference: {fileID: 6545401073797484455, guid: 2a913f574b59af64aba7d91f7c0b5671,
+        type: 3}
+    - target: {fileID: 8338175672335990560, guid: 0cf2e065dca289b49b9c490aae543d5f,
+        type: 3}
+      propertyPath: image
       value: 
       objectReference: {fileID: 6545401073797484455, guid: 2a913f574b59af64aba7d91f7c0b5671,
         type: 3}

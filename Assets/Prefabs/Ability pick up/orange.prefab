@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8338175672335990560}
   m_Layer: 0
   m_Name: orange
-  m_TagString: Untagged
+  m_TagString: Colors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,5 +114,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2d79a18744be942a9d0852984a8c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 5026498778313770296, guid: c0953a3447071e340b2c22e3a687dc96,
-    type: 3}
+  image: {fileID: 6545401073797484455, guid: 2a913f574b59af64aba7d91f7c0b5671, type: 3}

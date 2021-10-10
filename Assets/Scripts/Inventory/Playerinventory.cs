@@ -9,9 +9,8 @@ public class Playerinventory : MonoBehaviour
     public GameObject[] slots;
     Event e;
     KeyCode keyCode;
-    public Image healthmeter;
-    int maxHealth = 100;
-    public float health = 0;
+    
+    
 
 
     private void OnGUI()
@@ -31,18 +30,19 @@ public class Playerinventory : MonoBehaviour
                 if (slots[0] == null) return;
                 slots[0].GetComponentInChildren<Button>()?.onClick.Invoke();
                 keyCode = 0;
-                health++;
-                healthmeter.fillAmount = health / maxHealth;
+                
                 break;
             case KeyCode.Alpha2:
                 if (slots[1] == null) return;
                 slots[1].GetComponentInChildren<Button>()?.onClick.Invoke();
                 keyCode = 0;
+                
                 break;
             case KeyCode.Alpha3:
                 if (slots[2] == null) return;
                 slots[2].GetComponentInChildren<Button>()?.onClick.Invoke();
                 keyCode = 0;
+
                 break;
         }
     }
@@ -54,6 +54,6 @@ public class Playerinventory : MonoBehaviour
         {
             isFull[i] = false;
         }
-        health = 1;
+        
     }
 }

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 838722293}
-  - component: {fileID: 838722294}
   - component: {fileID: 838722295}
   m_Layer: 0
   m_Name: enemy hit point
@@ -26,24 +25,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838722292}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.77, y: 0.100000024, z: -15.510307}
+  m_LocalPosition: {x: 0.81, y: 0.52, z: -15.510307}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1013903688985085199}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &838722294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838722292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b67d34b04eaed6742a3618e04b49c999, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &838722295
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -94,7 +81,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996571328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.89, y: -1.05, z: -176.62788}
+  m_LocalPosition: {x: 1.89, y: -0.95, z: -176.62788}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1013903688985085199}
@@ -113,6 +100,7 @@ GameObject:
   - component: {fileID: 1400596984}
   - component: {fileID: 1464145499}
   - component: {fileID: 202091046}
+  - component: {fileID: 202091050}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Enemy
@@ -129,7 +117,7 @@ Transform:
   m_GameObject: {fileID: 1521085554873418435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.9, y: 20.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1.7094694}
   m_Children:
   - {fileID: 838722293}
   - {fileID: 1996571329}
@@ -251,3 +239,18 @@ MonoBehaviour:
   speed: 2
   groundDetection: {fileID: 1996571329}
   target: {fileID: 0}
+--- !u!114 &202091050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521085554873418435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2f8af90eb2f704bbaecb2888fac50d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  Range: 5
+  moveSpeed: 2

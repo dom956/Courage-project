@@ -7,7 +7,7 @@ public class Pickup : MonoBehaviour
 {
     private Playerinventory inventory;
 
-    public GameObject item;
+    public GameObject image;
 
     private void Start()
     {
@@ -26,7 +26,7 @@ public class Pickup : MonoBehaviour
                 if (inventory.isFull[i] == false)
                 {
                     inventory.isFull[i] = true;
-                    GameObject newItem = Instantiate(item, Vector3.zero, Quaternion.identity);
+                    GameObject newItem = Instantiate(image, Vector3.zero, Quaternion.identity);
                     newItem.transform.SetParent(inventory.slots[i].transform, false);
                     Destroy(gameObject);
                     break;

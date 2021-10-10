@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1064766014}
   m_Layer: 0
   m_Name: green
-  m_TagString: Untagged
+  m_TagString: Colors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,6 +44,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -123,5 +124,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2d79a18744be942a9d0852984a8c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 8870866387510325806, guid: 7ea1f0d41e1e9b143aa37ec0af1eb6a6,
-    type: 3}
+  item: {fileID: 0}

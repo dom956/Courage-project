@@ -5,7 +5,7 @@ using UnityEngine;
 public class Keypickup : MonoBehaviour
 {
     [SerializeField]
-    GameObject door;
+    GameObject obstacle;
     bool isopened = false;
 
 
@@ -15,7 +15,7 @@ public class Keypickup : MonoBehaviour
         if (isopened == false)
         {
             isopened = true;
-            door.transform.position += new Vector3(0, 4, 0);
+            obstacle.transform.position += new Vector3(0, 4, 0);
             Destroy(gameObject);
         }
     }
