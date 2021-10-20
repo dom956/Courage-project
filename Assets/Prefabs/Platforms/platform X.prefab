@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4083675161223145939}
   - component: {fileID: 4083675161223145938}
-  - component: {fileID: 4083675161223145937}
   - component: {fileID: 4083675161223145949}
+  - component: {fileID: 1706317100}
   m_Layer: 0
   m_Name: platform X
   m_TagString: Ground
@@ -86,21 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 2
   m_SpriteSortPoint: 0
---- !u!114 &4083675161223145937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4083675161223145936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11125812c977f494cafd62f3eaa29621, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightLimit: -5
-  leftLimit: -15
-  speed: 2
 --- !u!61 &4083675161223145949
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127,3 +112,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1706317100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4083675161223145936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb23d280149478d4ab3787ce18933115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightLimit: 2.5
+  leftLimit: -1
+  speed: 2

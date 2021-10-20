@@ -84,6 +84,8 @@
     <Compile Include="Assets\Scripts\Enemies\Spikes.cs" />
     <Compile Include="Assets\Scripts\Inventory\Colorinventory.cs" />
     <Compile Include="Assets\Scripts\Enemies\Patrol.cs" />
+    <Compile Include="Assets\Scripts\Platform movement\PlatformX.cs" />
+    <Compile Include="Assets\Scripts\Platform movement\PlatformY.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
