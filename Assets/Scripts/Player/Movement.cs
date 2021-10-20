@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Physics2D.IgnoreLayerCollision(0, 6, false);
+        
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class Movement : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-
+        
 
     }
 

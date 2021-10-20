@@ -28,6 +28,12 @@ public class Pickup : MonoBehaviour
                     inventory.isFull[i] = true;
                     GameObject newItem = Instantiate(image, Vector3.zero, Quaternion.identity);
                     newItem.transform.SetParent(inventory.slots[i].transform, false);
+
+
+                    if (image.name == "red image")
+                    {
+                        inventory.hasRedItem = true;
+                    }
                     Destroy(gameObject);
                     break;
                 }

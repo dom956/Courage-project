@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 3396740261615509250}
   - component: {fileID: 1909689305277605198}
   - component: {fileID: 1356891404659301596}
-  - component: {fileID: -5366274230574114177}
   m_Layer: 5
   m_Name: orange image
   m_TagString: Untagged
@@ -156,17 +155,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-5366274230574114177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6545401073797484455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 033eac4570cadf14aac215b9ce9ad6e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGrounded: 0
-  pl: {fileID: 4982882873667100580, guid: 21858dbece70abb45b5de894db8b1c9c, type: 3}

@@ -8,15 +8,17 @@ TagManager:
   - Keys
   - Enemy
   - Colors
+  - Pickable
+  - Spikes
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Safezone
+  - Player
   - Water
   - UI
   - Ground
-  - 
+  - Red object
   - 
   - 
   - 

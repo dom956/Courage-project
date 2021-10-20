@@ -15,7 +15,8 @@ public class Keypickup : MonoBehaviour
         if (isopened == false)
         {
             isopened = true;
-            obstacle.transform.position += new Vector3(0, 4, 0);
+            obstacle.GetComponent<doorOpen>().pickedKey();
+            //obstacle.transform.position += new Vector3(0, 4, 0);
             Destroy(gameObject);
         }
     }

@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ffe0f86a966c62646a9f012880f1f764, type: 3}
   m_Color: {r: 0.7830189, g: 0.7616424, b: 0.040628344, a: 1}
   m_FlipX: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c78fa027f10c9124984567b2ec694f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
+  obstacle: {fileID: 0}
 --- !u!61 &-5792041148598332089
 BoxCollider2D:
   m_ObjectHideFlags: 0
