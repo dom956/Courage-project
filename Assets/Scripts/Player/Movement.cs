@@ -21,16 +21,16 @@ public class Movement : MonoBehaviour
         transform.position += movement * Time.deltaTime * moveSpeed;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Keys"))
-        {
-            Destroy(collision.gameObject);
-        }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+        //if (collision.collider.CompareTag("Keys"))
+        //{
+            //Destroy(collision.gameObject);
+        //}
 
         
 
-    }
+    //}
 
 
 

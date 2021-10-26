@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,47 +53,135 @@
     <UnityVersion>2021.1.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityUnlocks\AbilityUnlockTrigger.cs" />
     <Compile Include="Assets\Scripts\doorOpen.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\NetClimbModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityUnlocks\LevelStartAbilityLock.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\LevelManagement\InSceneLevelSwitcher.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\MovementAnimation\CapsuleMovementPathNode.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Input\AutoRunnerJumpOverride.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\WallJumpModule.cs" />
     <Compile Include="Assets\Scripts\Player\Grounded.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Physics\CapsuleController\CapsuleTransform.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Input\UIButtonInputOverride.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Physics\CapsuleController\CapsuleColliderState\CCSideCastInfo.cs" />
     <Compile Include="Assets\Scripts\Scene\Onstaytrigger.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\DropDownModule.cs" />
+    <Compile Include="Assets\Scripts\Platform movement\PlatformY.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\CrouchingModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\Equipment\JetpackVisuals.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Debug\GizmoM.cs" />
     <Compile Include="Assets\Scripts\ElevatorMovement.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\WallSlidingModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\LevelManagement\DeathTrigger.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\GroundedAnimatedAbilityModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Input\ButtonInput.cs" />
     <Compile Include="Assets\Scripts\Scene\Buttonpress.cs" />
-    <Compile Include="Assets\KY_effects\Script\Lighting.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Input\PlayerInput.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\RunnerDemoObstacles\RunnerDemoRotator.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\ExtraPlayerScripts\OnCollisionParticleSpawner.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Physics\CapsuleController\CapsuleColliderState\CCEdgeCastInfo.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\Rotator.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\DoubleJumpModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\SlidingModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Physics\CapsuleController\ControlledCapsuleCollider.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\ExtraPlayerScripts\OnRunParticleSpawner.cs" />
+    <Compile Include="Assets\3D courage project\Scripts\Keypickupd.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\AbilityModuleManager.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\2.5DDemo\PlaneLaunchTrigger.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\LevelManagement\InSceneLevel.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityUnlocks\AbilityUnlockList.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Debug\MovementStateText.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\LadderClimbModule.cs" />
     <Compile Include="Assets\Scripts\random scripts\FindMissingScripts.cs" />
     <Compile Include="Assets\Scripts\random scripts\Textactive.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\RunnerDemoObstacles\RunnerDemoPathMover.cs" />
     <Compile Include="Assets\Scripts\Player\Movement.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\LevelManagement\LevelTransition.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\AbilityModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Camera\BasicCameraTracker.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\ZiplineModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Sprites\SpriteAnimator.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\LedgeHangModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\SwimModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\ExtraPlayerScripts\OnWallSlideParticleSpawner.cs" />
+    <Compile Include="Assets\3D courage project\Scripts\Dooropend.cs" />
     <Compile Include="Assets\Scripts\Player\Health.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Input\DirectionInput.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\FixedUpdateRenderInterpolator.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\JetpackModule.cs" />
     <Compile Include="Assets\Scripts\Player\Abilityactive.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\EntityControllers\CharacterControllerBase.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\WallStickModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Physics\ColliderState.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\SprintModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\ZiplineRenderer.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\2.5DDemo\WorldTurnTrigger.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\Net.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\AnimatedMover.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Physics\ControlledCollider.cs" />
     <Compile Include="Assets\Scripts\Abilites\Orange.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Input\AutoRunnerInputOverride.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\EdgeJumpModule.cs" />
     <Compile Include="Assets\Scripts\Abilites\Red.cs" />
     <Compile Include="Assets\Scripts\Scene\Keypickup.cs" />
     <Compile Include="Assets\Scripts\random scripts\Link.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\WallRunModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\GroundedControllerAbilityModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\RunnerDemoObstacles\RunnerDemoMover.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\Balancer.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\MovementAnimation\CapsuleMovementPath.cs" />
     <Compile Include="Assets\Scripts\Scene\Loadscene.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\AbilitySlot.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\Mover.cs" />
     <Compile Include="Assets\Scripts\SignPost.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\ExtraPlayerScripts\OnSquishRespawner.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\Ladder.cs" />
     <Compile Include="Assets\Scripts\ElevatorButton.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Physics\CapsuleController\CapsuleCollision.cs" />
     <Compile Include="Assets\Scripts\Inventory\Pickup.cs" />
-    <Compile Include="Assets\KY_effects\Script\ConGUI.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\RunnerDemoObstacles\RunnerDemoBalancer.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Input\UIDirectionInputOverride.cs" />
     <Compile Include="Assets\Scripts\Scene\Levelcontrol.cs" />
-    <Compile Include="Assets\Scripts\Playerinventory.cs" />
+    <Compile Include="Assets\Scripts\Platform movement\PlatformX.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Physics\CapsuleController\CapsuleColliderState\CapsuleColliderState.cs" />
+    <Compile Include="Assets\3D courage project\Scripts\Signpostd.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Physics\CapsuleController\CapsuleMovingColliderSolver.cs" />
+    <Compile Include="Assets\3D courage project\Scripts\Redplatformd.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\ExtraPlayerScripts\DashArrow.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\LevelManagement\RespawnPointSetter.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\CurvedZipline.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Physics\CapsuleController\CapsuleParameters.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\OneWayPlatform.cs" />
+    <Compile Include="Assets\3D courage project\Scripts\Playerinventory.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\2.5DDemo\WorldTurnPoint.cs" />
     <Compile Include="Assets\Scripts\RedPlatform.cs" />
     <Compile Include="Assets\Scripts\Scene\Mainmenu.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\ExtraPlayerScripts\OnJumpParticleSpawner.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\WallClimbModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\2.5DDemo\WorldTurner.cs" />
+    <Compile Include="Assets\3D courage project\Scripts\Pickupscriptd.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Physics\CapsuleController\CapsuleVolumeIntegrity.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\EntityControllers\HoverCharacterController.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\EntityControllers\GroundedCharacterController.cs" />
     <Compile Include="Assets\Scripts\Enemies\Spikes.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\DashModule.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\2.5DDemo\PlaneTeleportTrigger.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Input\InputElement.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Game\DemoObjects\Zipline.cs" />
     <Compile Include="Assets\Scripts\Inventory\Colorinventory.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\Physics\CapsuleController\CapsuleColliderState\CCGroundedInfo.cs" />
     <Compile Include="Assets\Scripts\Enemies\Patrol.cs" />
-    <Compile Include="Assets\Scripts\Platform movement\PlatformX.cs" />
-    <Compile Include="Assets\Scripts\Platform movement\PlatformY.cs" />
+    <Compile Include="Assets\CharacterEditorPackage\Code\AbilityModules\EdgeClimbModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\CharacterEditorPackage\Update notes.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -104,6 +192,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\CharacterEditorPackage\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

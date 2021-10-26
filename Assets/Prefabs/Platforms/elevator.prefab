@@ -153,6 +153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floors: []
   speed: 2
-  elevatorUI: {fileID: 8410563206278033712}
-  distanceToTrigger: 0
-  elevatorButton: {fileID: 8410563206278033712}
+  elevatorUI: {fileID: 0}
+  distanceToTrigger: 2
+  elevatorButton: {fileID: 0}
